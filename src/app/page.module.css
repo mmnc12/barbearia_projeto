@@ -1,0 +1,109 @@
+.page {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.page>main {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* css header */
+.page>main>header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 20px;
+  width: 100%;
+  border-bottom: 1px solid #e3bb42ff;
+}
+
+.page>main>header>img {
+  width: 100px;
+  height: 50px;
+}
+
+.page>main>header>nav {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 10px;
+}
+
+.page>main>header>nav>a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+}
+
+.page>main>header>nav>a:hover {
+  color: #e3bb42ff;
+}
+/* Fim css header  */
+
+/* css banner */
+section.banner {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../../public/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+  height: 400px;
+  color: #e3bb42ff;
+  justify-content: center;
+  align-items: center;
+}
+
+section.banner > h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section.banner > button {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #e3bb42ff;
+  color: white;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+section.banner > button:hover {
+  background-color: white;
+  color: #e3bb42ff;
+}
+/* Fim css banner */
+
+/* css contato */
+section.end_contato {
+  border: 2px dashed red;
+  display: flex;
+  max-width: 1024px;
+  margin: auto;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+section.end_contato > div {
+  width: 200px;
+  text-align: center;
+}
+
+div.icon {
+  width: 100px;
+  height: 20px;
+}
+
+div.linha {
+  border-bottom: 3px solid red;
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
