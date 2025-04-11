@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
+  background-color: #faf8f2;
 }
 
 .page>main {
@@ -58,6 +59,7 @@ section.banner {
   color: #e3bb42ff;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 section.banner > h1 {
@@ -82,28 +84,56 @@ section.banner > button:hover {
 /* Fim css banner */
 
 /* css contato */
-section.end_contato {
+/* section.end_contato {
   border: 2px dashed red;
+  background-color: white;
   display: flex;
   max-width: 1024px;
   margin: auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-flow: row wrap;
-}
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-section.end_contato > div {
+  transform: translate(-50%, 30%);
+} */
+
+/* section.end_contato > div {
   width: 200px;
   text-align: center;
+  border: 2px dashed red;
+} */
+
+section.end_contato {
+  max-width: 1024px;
+  border: 2px dashed red;
+  margin: auto;
 }
 
-div.icon {
-  width: 100px;
-  height: 20px;
+.container_endereco {
+  display: flex;
+  border: 2px dashed red;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+}
+
+section.end_contato > div > h2 {
+  margin-bottom: 10px;
 }
 
 div.linha {
-  border-bottom: 3px solid red;
+  border-bottom: 10px solid #e3bb42ff;
   width: 40%;
   text-align: center;
   margin: auto;
+  margin-bottom: 10px;
+}
+
+section.end_contato > div > p {
+  text-align: center;
 }
