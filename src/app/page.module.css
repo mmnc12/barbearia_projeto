@@ -157,9 +157,30 @@ section.qualificacao > article > p {
   margin-bottom: 10px;
 }
 
+section.qualificacao > article > div.sastifacao {
+  display: flex;
+  border: 2px dashed red;
+  justify-content: center;
+  gap: 50px;
+  font-weight: bold;
+}
+
+section.qualificacao > article > div.sastifacao > small {
+  display: inline-block;
+  border: 2px dashed red;
+  width: 100px;
+  text-align: center;
+}
+
+section.qualificacao > article > div.sastifacao > small > em {
+  text-decoration: none;
+  font-size: 1em;
+  color: red;
+}
+
 section.qualificacao > aside {
   border: 2px dashed red;
   padding: 5px;
   overflow: hidden;
-  
 }
+

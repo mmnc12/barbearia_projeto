@@ -58,6 +58,10 @@ export default function Home() {
             <p>
               A Barbearia do João está localizada no centro da cidade, de fácil acesso. Oferecemos cortes de cabelo para adultos e crianças, e também cuidamos da sua barba com todo o carinho e atenção.
             </p>
+            <div className={estilos.sastifacao}>
+              <small><strong>100</strong><em>%</em><br/> Satistifação garantida</small>
+              <small><strong>10</strong><em>+<em><br/> Anos de experiência</small>
+            </div>
           </article>
           <aside>
             <img src="img21cab.png" alt="imagem de corte de cabelo" />
