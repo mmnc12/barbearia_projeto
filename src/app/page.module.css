@@ -137,6 +137,7 @@ section.end_contato > div > p {
 }
 /* Fim css contato */
 
+/* Início css qualificação */
 section.qualificacao {
   display: flex;
   justify-content: center;
@@ -144,7 +145,6 @@ section.qualificacao {
   padding: 20px;
   overflow: hidden;
   flex-flow: column nowrap;
-  border: 2px dashed red;
 }
 
 section.qualificacao > article > h2 {
@@ -159,7 +159,6 @@ section.qualificacao > article > p {
 
 section.qualificacao > article > div.sastifacao {
   display: flex;
-  border: 2px dashed red;
   justify-content: center;
   gap: 50px;
   font-weight: bold;
@@ -167,20 +166,267 @@ section.qualificacao > article > div.sastifacao {
 
 section.qualificacao > article > div.sastifacao > small {
   display: inline-block;
-  border: 2px dashed red;
   width: 100px;
   text-align: center;
+  padding: 10px;
+}
+
+section.qualificacao > article > div.sastifacao > small > strong {
+  font-size: 1.5em;
 }
 
 section.qualificacao > article > div.sastifacao > small > em {
   text-decoration: none;
-  font-size: 1em;
-  color: red;
+  font-size: 1.5em;
+  color: #e3bb42ff;
 }
 
 section.qualificacao > aside {
-  border: 2px dashed red;
   padding: 5px;
   overflow: hidden;
+}
+/* Fim css qualificação */
+
+/*Início css serviços */
+section.preco_servicos {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 20px;
+}
+
+
+section.preco_servicos > h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+section.preco_servicos > p {
+  text-align: center;
+  padding: 10px;
+}
+
+section.preco_servicos > div.servicos {
+  background-color: white;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+  gap: 20px;
+}
+
+section.preco_servicos > div.servicos > div.img_texto {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+section.preco_servicos > div.servicos > div.img_texto > div.img > img {
+  width: 40px;
+  height: 40px;
+}
+
+section.preco_servicos > div.servicos > div.img_texto > div.texto > h3 {
+  display: flex;
+  text-align: start;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+section.preco_servicos > div.servicos > div.img_texto > div.texto > p {
+  margin-bottom: 10px;
+}
+
+section.preco_servicos > div.servicos > div.img_texto > div.texto > p.preco {
+  font-weight: bold;
+  color: #e3bb42ff;
+}
+/* Fim do css serviços */
+
+/*Início css pacotes */
+section.pacotes {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 20px;
+}
+
+section.pacotes > button {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e3bb42ff;
+  color: white;
+  font-size: .8em;
+  cursor: pointer;
+  width: 200px;
+  margin: auto;
+}
+
+section.pacotes > h2 {
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+section.pacotes > p {
+  text-align: center;
+  padding: 10px;
+}
+
+section.pacotes > div.servicos {
+  background-color: white;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+  gap: 20px;
+}
+
+section.pacotes > div.servicos > div.img_texto {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+section.pacotes > div.servicos > div.img_texto > div.img > img {
+  width: 40px;
+  height: 40px;
+}
+
+section.pacotes > div.servicos > div.img_texto > div.texto > h3 {
+  display: flex;
+  text-align: start;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+section.pacotes > div.servicos > div.img_texto > div.texto > p {
+  margin-bottom: 10px;
+}
+
+section.pacotes > div.servicos > div.img_texto > div.texto > p.preco {
+  font-weight: bold;
+  color: #e3bb42ff;
+}
+/* Fim do css pacotes */
+
+/* Iníco do css equipes */
+section.equipe {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 20px;
+}
+
+section.equipe > button {
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e3bb42ff;
+  color: white;
+  font-size: .8em;
+  cursor: pointer;
+  width: 200px;
+  margin: auto;
+}
+
+section.equipe > h2 {
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+section.equipe > p {
+  text-align: center;
+  padding: 10px;
+}
+
+section.equipe > div.servicos {
+  background-color: white;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+  gap: 20px;
+}
+
+section.equipe > div.servicos > div.img_texto {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+section.equipe > div.servicos > div.img_texto > div.texto > h3 {
+  display: flex;
+  text-align: start;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+section.equipe > div.servicos > div.img_texto > div.texto > p {
+  margin-bottom: 10px;
+}
+/* Fim do css equipe */
+
+section.espaco {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 20px;
+}
+
+section.espaco > h2 {
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+section.espaco > div.imagens {
+  display: flex;
+  overflow: hidden;
+  flex-flow: column wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+section.espaco > div.imagens > img {
+  width: 441px;
+  height: 435px;
+}
+
+ection.espaco > p {
+  text-align: center;
+  padding: 10px;
+}
+
+section.espaco > div.servicos {
+  background-color: white;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+  gap: 20px;
+}
+
+section.espaco > div.servicos > div.img_texto {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+section.espaco > div.servicos > div.img_texto > div.texto > h3 {
+  display: flex;
+  text-align: start;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+section.espaco > div.servicos > div.img_texto > div.texto > p {
+  margin-bottom: 10px;
 }
 
