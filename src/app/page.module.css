@@ -628,6 +628,10 @@ footer.footer > nav > a {
   color: white;
 }
 
+footer.footer > nav > a:hover {
+  color: #e3bb42ff;
+}
+
 footer.footer > div.autor {
   color: white;
   font-size: .8em;
