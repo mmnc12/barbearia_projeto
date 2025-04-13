@@ -1,0 +1,6 @@
+@media screen and (min-width: 768px) {
+  .page>main>header {
+    flex-wrap: row wrap;
+    background-color: white;
+  }
+}

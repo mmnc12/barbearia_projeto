@@ -6,6 +6,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import Image from "next/image";
 import estilos from "./page.module.css";
+import media from "./media-query.css";
 
 
 export default function Home() {

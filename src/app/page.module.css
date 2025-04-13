@@ -47,6 +47,7 @@
 .page>main>header>nav>a:hover {
   color: #e3bb42ff;
 }
+
 /* Fim css header  */
 
 /* css banner */
@@ -62,16 +63,16 @@ section.banner {
   color: #e3bb42ff;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
+  position: relative;
 }
 
-section.banner > h1 {
+section.banner>h1 {
   font-size: 2em;
   text-align: center;
   margin-bottom: 10px;
 }
 
-section.banner > button {
+section.banner>button {
   padding: 10px;
   border-radius: 5px;
   background-color: #e3bb42ff;
@@ -80,31 +81,25 @@ section.banner > button {
   cursor: pointer;
 }
 
-section.banner > button:hover {
+section.banner>button:hover {
   background-color: white;
   color: #e3bb42ff;
 }
+
 /* Fim css banner */
 
 /* css contato */
 section.end_contato {
   background-color: white;
   display: flex;
-  /* max-width: 1024px; */
   width: 100%;
-  /* margin: auto; */
   justify-content: center;
   gap: 10px;
   flex-flow: column wrap;
   padding: 10px;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, 40%); */
 }
 
-section.end_contato > div {
+section.end_contato>div {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -118,7 +113,7 @@ section.end_contato > div {
   margin: auto;
 }
 
-.end_contato > div > h2 {
+.end_contato>div>h2 {
   width: 200px;
   margin: 0px auto 10px;
 }
@@ -130,11 +125,12 @@ div.linha {
   margin: 0px auto 10px;
 }
 
-section.end_contato > div > p {
+section.end_contato>div>p {
   text-align: center;
   width: 200px;
   margin: 0px auto 10px;
 }
+
 /* Fim css contato */
 
 /* Início css qualificação */
@@ -144,47 +140,54 @@ section.qualificacao {
   width: 100%;
   padding: 20px;
   overflow: hidden;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
 }
 
-section.qualificacao > article > h2 {
+section.qualificacao>article>h2 {
   text-align: center;
   margin-bottom: 10px;
 }
 
-section.qualificacao > article > p {
+section.qualificacao>article>p {
   text-align: justify;
   margin-bottom: 10px;
 }
 
-section.qualificacao > article > div.sastifacao {
+section.qualificacao>article>div.sastifacao {
   display: flex;
   justify-content: center;
   gap: 50px;
   font-weight: bold;
 }
 
-section.qualificacao > article > div.sastifacao > small {
+section.qualificacao>article>div.sastifacao>small {
   display: inline-block;
   width: 100px;
   text-align: center;
   padding: 10px;
 }
 
-section.qualificacao > article > div.sastifacao > small > strong {
+section.qualificacao>article>div.sastifacao>small>strong {
   font-size: 1.5em;
 }
 
-section.qualificacao > article > div.sastifacao > small > em {
+section.qualificacao>article>div.sastifacao>small>em {
   text-decoration: none;
   font-size: 1.5em;
   color: #e3bb42ff;
 }
 
-section.qualificacao > aside {
+section.qualificacao>aside {
   padding: 5px;
   overflow: hidden;
 }
+
+section.qualificacao>aside>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Fim css qualificação */
 
 /*Início css serviços */
@@ -196,17 +199,17 @@ section.preco_servicos {
 }
 
 
-section.preco_servicos > h2 {
+section.preco_servicos>h2 {
   text-align: center;
   padding: 10px;
 }
 
-section.preco_servicos > p {
+section.preco_servicos>p {
   text-align: center;
   padding: 10px;
 }
 
-section.preco_servicos > div.servicos {
+section.preco_servicos>div.servicos {
   background-color: white;
   display: flex;
   flex-flow: column wrap;
@@ -214,7 +217,7 @@ section.preco_servicos > div.servicos {
   gap: 20px;
 }
 
-section.preco_servicos > div.servicos > div.img_texto {
+section.preco_servicos>div.servicos>div.img_texto {
   display: flex;
   width: 100%;
   padding: 10px;
@@ -222,26 +225,27 @@ section.preco_servicos > div.servicos > div.img_texto {
   gap: 10px;
 }
 
-section.preco_servicos > div.servicos > div.img_texto > div.img > img {
+section.preco_servicos>div.servicos>div.img_texto>div.img>img {
   width: 40px;
   height: 40px;
 }
 
-section.preco_servicos > div.servicos > div.img_texto > div.texto > h3 {
+section.preco_servicos>div.servicos>div.img_texto>div.texto>h3 {
   display: flex;
   text-align: start;
   margin-bottom: 10px;
   width: 100%;
 }
 
-section.preco_servicos > div.servicos > div.img_texto > div.texto > p {
+section.preco_servicos>div.servicos>div.img_texto>div.texto>p {
   margin-bottom: 10px;
 }
 
-section.preco_servicos > div.servicos > div.img_texto > div.texto > p.preco {
+section.preco_servicos>div.servicos>div.img_texto>div.texto>p.preco {
   font-weight: bold;
   color: #e3bb42ff;
 }
+
 /* Fim do css serviços */
 
 /*Início css pacotes */
@@ -252,7 +256,7 @@ section.pacotes {
   padding: 20px;
 }
 
-section.pacotes > button {
+section.pacotes>button {
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -263,23 +267,23 @@ section.pacotes > button {
   margin: auto;
 }
 
-section.pacotes > button:hover {
+section.pacotes>button:hover {
   background-color: white;
   color: #e3bb42ff;
 }
 
-section.pacotes > h2 {
+section.pacotes>h2 {
   text-align: center;
   padding: 10px;
   margin-top: 10px;
 }
 
-section.pacotes > p {
+section.pacotes>p {
   text-align: center;
   padding: 10px;
 }
 
-section.pacotes > div.servicos {
+section.pacotes>div.servicos {
   background-color: white;
   display: flex;
   flex-flow: column wrap;
@@ -287,7 +291,7 @@ section.pacotes > div.servicos {
   gap: 20px;
 }
 
-section.pacotes > div.servicos > div.img_texto {
+section.pacotes>div.servicos>div.img_texto {
   display: flex;
   width: 100%;
   padding: 10px;
@@ -295,26 +299,27 @@ section.pacotes > div.servicos > div.img_texto {
   gap: 10px;
 }
 
-section.pacotes > div.servicos > div.img_texto > div.img > img {
+section.pacotes>div.servicos>div.img_texto>div.img>img {
   width: 40px;
   height: 40px;
 }
 
-section.pacotes > div.servicos > div.img_texto > div.texto > h3 {
+section.pacotes>div.servicos>div.img_texto>div.texto>h3 {
   display: flex;
   text-align: start;
   margin-bottom: 10px;
   width: 100%;
 }
 
-section.pacotes > div.servicos > div.img_texto > div.texto > p {
+section.pacotes>div.servicos>div.img_texto>div.texto>p {
   margin-bottom: 10px;
 }
 
-section.pacotes > div.servicos > div.img_texto > div.texto > p.preco {
+section.pacotes>div.servicos>div.img_texto>div.texto>p.preco {
   font-weight: bold;
   color: #e3bb42ff;
 }
+
 /* Fim do css pacotes */
 
 /* Iníco do css equipes */
@@ -325,7 +330,7 @@ section.equipe {
   padding: 20px;
 }
 
-section.equipe > button {
+section.equipe>button {
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -336,23 +341,23 @@ section.equipe > button {
   margin: auto;
 }
 
-section.equipe > button:hover {
+section.equipe>button:hover {
   background-color: white;
   color: #e3bb42ff;
 }
 
-section.equipe > h2 {
+section.equipe>h2 {
   text-align: center;
   padding: 10px;
   margin-top: 10px;
 }
 
-section.equipe > p {
+section.equipe>p {
   text-align: center;
   padding: 10px;
 }
 
-section.equipe > div.servicos {
+section.equipe>div.servicos {
   background-color: white;
   display: flex;
   flex-flow: column wrap;
@@ -360,7 +365,7 @@ section.equipe > div.servicos {
   gap: 20px;
 }
 
-section.equipe > div.servicos > div.img_texto {
+section.equipe>div.servicos>div.img_texto {
   display: flex;
   width: 100%;
   padding: 10px;
@@ -368,16 +373,17 @@ section.equipe > div.servicos > div.img_texto {
   gap: 10px;
 }
 
-section.equipe > div.servicos > div.img_texto > div.texto > h3 {
+section.equipe>div.servicos>div.img_texto>div.texto>h3 {
   display: flex;
   text-align: start;
   margin-bottom: 10px;
   width: 100%;
 }
 
-section.equipe > div.servicos > div.img_texto > div.texto > p {
+section.equipe>div.servicos>div.img_texto>div.texto>p {
   margin-bottom: 10px;
 }
+
 /* Fim do css equipe */
 
 /* Início do css espaço */
@@ -388,13 +394,13 @@ section.espaco {
   padding: 20px;
 }
 
-section.espaco > h2 {
+section.espaco>h2 {
   text-align: center;
   padding: 10px;
   margin-top: 10px;
 }
 
-section.espaco > div.imagens {
+section.espaco>div.imagens {
   display: flex;
   overflow: hidden;
   flex-flow: column wrap;
@@ -402,17 +408,18 @@ section.espaco > div.imagens {
   margin-bottom: 10px;
 }
 
-section.espaco > div.imagens > img {
-  width: 441px;
-  height: 435px;
+section.espaco>div.imagens>img {
+  width: 100%;
+  height: 431px;
+  object-fit: cover;
 }
 
-ection.espaco > p {
+ection.espaco>p {
   text-align: center;
   padding: 10px;
 }
 
-section.espaco > div.servicos {
+section.espaco>div.servicos {
   background-color: white;
   display: flex;
   flex-flow: column wrap;
@@ -420,7 +427,7 @@ section.espaco > div.servicos {
   gap: 20px;
 }
 
-section.espaco > div.servicos > div.img_texto {
+section.espaco>div.servicos>div.img_texto {
   display: flex;
   width: 100%;
   padding: 10px;
@@ -428,16 +435,17 @@ section.espaco > div.servicos > div.img_texto {
   gap: 10px;
 }
 
-section.espaco > div.servicos > div.img_texto > div.texto > h3 {
+section.espaco>div.servicos>div.img_texto>div.texto>h3 {
   display: flex;
   text-align: start;
   margin-bottom: 10px;
   width: 100%;
 }
 
-section.espaco > div.servicos > div.img_texto > div.texto > p {
+section.espaco>div.servicos>div.img_texto>div.texto>p {
   margin-bottom: 10px;
 }
+
 /* Fim do css espaço */
 
 /* Início do css depoimento */
@@ -447,7 +455,7 @@ section.aparencia_depoimento {
   margin-bottom: 10px;
 }
 
-section.aparencia_depoimento > div.banner {
+section.aparencia_depoimento>div.banner {
   background-image: url('../../public/banner10.png');
   background-size: cover;
   width: 100%;
@@ -459,14 +467,14 @@ section.aparencia_depoimento > div.banner {
   align-items: center;
 }
 
-section.aparencia_depoimento > div.banner > h1 {
+section.aparencia_depoimento>div.banner>h1 {
   color: #e3bb42ff;
   text-align: center;
   text-shadow: 2px 2px 2px black;
   width: 80%;
 }
 
-section.aparencia_depoimento > div.banner > button {
+section.aparencia_depoimento>div.banner>button {
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -477,48 +485,53 @@ section.aparencia_depoimento > div.banner > button {
   margin: auto;
 }
 
-section.aparencia_depoimento > div.banner > button:hover {
+section.aparencia_depoimento>div.banner>button:hover {
   background-color: white;
   color: #e3bb42ff;
 }
 
-section.aparencia_depoimento > div.depoimentos {
+section.aparencia_depoimento>div.depoimentos {
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
 
-section.aparencia_depoimento > div.depoimentos > h2 {
+section.aparencia_depoimento>div.depoimentos>h2 {
   text-align: center;
   padding: 10px;
   margin-top: 10px;
 }
 
-section.aparencia_depoimento > div.depoimentos > p {
+section.aparencia_depoimento>div.depoimentos>p {
   text-align: center;
   padding: 10px;
 }
 
-section.aparencia_depoimento > div.falas {
+section.aparencia_depoimento>div.falas {
   display: flex;
   overflow-x: auto;
 }
 
-section.aparencia_depoimento > div.falas::-webkit-scrollbar {
-  width: 5px; /* Largura da barra de rolagem */
-  height: 5px; /* Altura da barra de rolagem */
+section.aparencia_depoimento>div.falas::-webkit-scrollbar {
+  width: 5px;
+  /* Largura da barra de rolagem */
+  height: 5px;
+  /* Altura da barra de rolagem */
 }
 
-section.aparencia_depoimento > div.falas::-webkit-scrollbar-thumb {
-  background-color: #e3bb42ff; /* Cor da barra */
-  border-radius: 5px; /* Bordas arredondadas */
+section.aparencia_depoimento>div.falas::-webkit-scrollbar-thumb {
+  background-color: #e3bb42ff;
+  /* Cor da barra */
+  border-radius: 5px;
+  /* Bordas arredondadas */
 }
 
-section.aparencia_depoimento > div.falas::-webkit-scrollbar-track {
-  background-color: lightgray; /* Cor do fundo da barra */
+section.aparencia_depoimento>div.falas::-webkit-scrollbar-track {
+  background-color: lightgray;
+  /* Cor do fundo da barra */
 }
 
-section.aparencia_depoimento > div.falas > div {
+section.aparencia_depoimento>div.falas>div {
   display: flex;
   flex-flow: column nowrap;
   flex: 1 0 200px;
@@ -530,15 +543,16 @@ section.aparencia_depoimento > div.falas > div {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.279);
 }
 
-section.aparencia_depoimento > div.falas > div > img {
+section.aparencia_depoimento>div.falas>div>img {
   width: 70px;
   height: 70px;
   border-radius: 50%;
 }
 
-section.aparencia_depoimento > div.falas > div > div.icons {
+section.aparencia_depoimento>div.falas>div>div.icons {
   color: yellow;
 }
+
 /* Fim do css depoimento */
 
 /* Início css agendamento */
@@ -553,7 +567,7 @@ section.agendamento {
   justify-content: center;
 }
 
-section.agendamento > div {
+section.agendamento>div {
   background-color: rgba(255, 255, 255, 0.505);
   width: 80%;
   margin: auto;
@@ -561,26 +575,26 @@ section.agendamento > div {
   border-radius: 10px;
 }
 
-section.agendamento > div > h1 {
+section.agendamento>div>h1 {
   text-align: center;
   color: #e3bb42ff;
   text-shadow: 2px 2px 2px black;
   margin-bottom: 10px;
 }
 
-section.agendamento > div > p {
+section.agendamento>div>p {
   text-align: center;
   text-shadow: 2px 2px 2xp #e3bb42ff;
   margin-bottom: 10px;
 }
 
-section.agendamento > div > div.contato {
+section.agendamento>div>div.contato {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-div.contato > .icons {
+div.contato>.icons {
   background-color: white;
   border-radius: 50%;
   padding: 5px;
@@ -589,9 +603,10 @@ div.contato > .icons {
   margin-right: 5px;
 }
 
-div.contato > small {
+div.contato>small {
   text-align: center;
 }
+
 /* Fim do css agendamento */
 
 /* Início css localização */
@@ -599,6 +614,7 @@ section.localizacao {
   height: 200px;
   overflow: hidden;
 }
+
 /* Fim css localização */
 
 /* Início css footer */
@@ -610,44 +626,45 @@ footer.footer {
   padding: 10px;
 }
 
-footer.footer > img {
+footer.footer>img {
   width: 100px;
   height: 50px;
   margin-bottom: 10px;
 }
 
-footer.footer > nav {
+footer.footer>nav {
   display: flex;
   flex-flow: column wrap;
   gap: 5px;
   align-items: center;
 }
 
-footer.footer > nav > a {
+footer.footer>nav>a {
   text-decoration: none;
   color: white;
 }
 
-footer.footer > nav > a:hover {
+footer.footer>nav>a:hover {
   color: #e3bb42ff;
 }
 
-footer.footer > div.autor {
+footer.footer>div.autor {
   color: white;
   font-size: .8em;
 }
+
 /* Fim css footer */
 
 /* Início css botão whatsapp */
 .whatsappButton {
   position: fixed;
-  bottom: 20px; 
-  right: 20px; 
-  background-color: #25d366; 
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
   border-radius: 50%;
   padding: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000; 
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -655,11 +672,69 @@ footer.footer > div.autor {
 }
 
 .whatsappButton:hover {
-  background-color: #128c7e; 
+  background-color: #128c7e;
 }
 
 .whatsappIcon {
   color: white;
-  font-size: 1rem; 
+  font-size: 1rem;
 }
+
 /* Fim do botão whatsapp */
+
+
+@media screen and (min-width: 768px) {
+  section.banner {
+    position: relative;
+  }
+
+  .page>main>header {
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 20px 100px;
+  }
+
+  .page>main>header>nav {
+    flex-flow: row wrap;
+  }
+
+  section.end_contato {
+    max-width: 1024px;
+    margin: auto;
+    position: absolute;
+    flex-flow: row nowrap;
+
+    align-items: flex-start;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, 40%);
+  }
+
+  section.qualificacao {
+    width: 100%;
+    max-width: 1024px;
+    margin: 140px auto 0px;
+    flex-flow: row nowrap;
+    gap: 5px;
+    flex: 1 1 auto;
+  }
+
+  section.qualificacao>article {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    justify-content: center;
+    margin: 0;
+    padding: 5px;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+  }
+
+  section.qualificacao>aside {
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
+}
