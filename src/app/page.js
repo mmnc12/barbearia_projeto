@@ -1,6 +1,9 @@
 import { FaWhatsapp } from 'react-icons/fa';
 import { FaLocationDot, FaClock } from "react-icons/fa6";
 import { BiSolidPhoneCall } from "react-icons/bi";
+import { IoLogoInstagram } from "react-icons/io";
+import { FaFacebook } from "react-icons/fa";
+import { FiTwitter } from "react-icons/fi";
 import Image from "next/image";
 import estilos from "./page.module.css";
 
@@ -217,6 +220,7 @@ export default function Home() {
         </section>
         {/* Fim da seção espaço */}
 
+        {/* Início da seção depoimento */}
         <section className={estilos.aparencia_depoimento}>
           <div className={estilos.banner}>
             <h1>A MELHOR BARBEARIA DA REGIÃO BEM PERTINHO DE VOCÊ.</h1>
@@ -228,43 +232,121 @@ export default function Home() {
           </div>
           <div className={estilos.falas}>
             <div>
-              <img src="" alt="" />
-              {/* icon das estelas */}
+              <img src="face1.jpg" alt="Imagem de um homem branco" />
+              <div className={estilos.icons}>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+              </div>
               <h3>PAULO</h3>
               <p>Recomendo para quem busca qualidade e profissionalismo..</p>
             </div>
             <div>
-              <img src="" alt="" />
-              {/* icon das estelas */}
+              <img src="face2.jpg" alt="Imagem de um homem branco" />
+              <div className={estilos.icons}>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+              </div>
               <h3>CARLOS</h3>
               <p>O cuidado com o detalhe é incrível, desde o corte até a barba. Serviço nota 10..</p>
             </div>
             <div>
-              <img src="" alt="" />
-              {/* icon das estelas */}
+              <img src="face3.jpg" alt="Imagem de um homem negro" />
+              <div className={estilos.icons}>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+              </div>
               <h3>MARCOS</h3>
               <p>A equipe é super qualificada e o ambiente faz você querer voltar sempre</p>
             </div>
             <div>
-              <img src="" alt="" />
-              {/* icon das estelas */}
+              <img src="face4.jpg" alt="Imagem de um homem branco" />
+              <div className={estilos.icons}>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+              </div>
               <h3>RAFAEL</h3>
               <p>Os barbeiros são experientes e transforma o corte em uma experiência relaxante..</p>
             </div>
             <div>
-              <img src="" alt="" />
-              {/* icon das estelas */}
+              <img src="face5.jpg" alt="Imagem de um homem branco" />
+              <div className={estilos.icons}>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+              </div>
               <h3>FERNANDO</h3>
               <p>O ambiente é muito bom todo climatizado, além de um corte e tratamento diferenciado..</p>
             </div>
             <div>
-              <img src="" alt="" />
-              {/* icon das estelas */}
+              <img src="face7.jpg" alt="Imagem de um homem negro" />
+              <div className={estilos.icons}>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+                <small>&#9733;</small>
+              </div>
               <h3>LUCAS</h3>
               <p>Atendimento muito bom, ambiente elegante e muito acolhedor, super recomendo..</p>
             </div>
           </div>
         </section>
+        {/* Fim da seção depoimento */}
+
+        {/* Início da seção agendamento */}
+        <section className={estilos.agendamento}>
+          <div>
+            <h1>FAÇA SEU AGENDAMENTO</h1>
+            <p>Agende seu horário e venha conhecer a melhor barbearia da região.Faça seu agendamento via WhatsApp</p>
+            <div className={estilos.contato}>
+              <BiSolidPhoneCall className={estilos.icons} />
+              <small>
+                WhatsApp <br /> (74) 98106-7364
+              </small>
+            </div>
+          </div>
+        </section>
+        {/* Fim da seção agendamento */}
+
+        <section className={estilos.localizacao}>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310.06869118632443!2d-40.36307300539684!3d-10.74367402025921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76d1437c8855aff%3A0x5e96352a16b17889!2sPindoba%C3%A7u%2C%20BA%2C%2044770-000!5e1!3m2!1spt-BR!2sbr!4v1740946154404!5m2!1spt-BR!2sbr" width="100%" height="450" className="border:0;" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <footer className={estilos.footer}>
+          <img src="banner2.png" alt="logo" />
+          <nav>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Depoimentos</a>
+            <a href="#">Agendamento</a>
+            <a href="#">Localização</a>
+          </nav>
+          <div className={estilos.icons}>
+            <IoLogoInstagram />
+            <FaFacebook />
+            <FiTwitter />
+          </div>
+          <div className={estilos.autor}>
+            <p>&reg; 2025 - Desenvolvido por "Manoel Mecias do Nascimento"</p>
+          </div>
+        </footer>
+        <a href="https://wa.me/99999999999" className={estilos.whatsappButton} target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp className={estilos.whatsappIcon} />
+        </a>
       </main>
     </div>
   );
