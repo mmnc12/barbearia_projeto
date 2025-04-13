@@ -15,14 +15,16 @@ export default function Home() {
       <main>
         {/* Iniio header */}
         <header>
-          <img src="banner2.png" alt="logo" />
-          <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#servico">Serviços</a>
-            <a href="#depoimento">Depoimentos</a>
-            <a href="#agenda">Agendamento</a>
-            <a href="#localizacao">Localização</a>
-          </nav>
+          <div>
+            <img src="banner2.png" alt="logo" />
+            <nav>
+              <a href="#sobre">Sobre</a>
+              <a href="#servico">Serviços</a>
+              <a href="#depoimento">Depoimentos</a>
+              <a href="#agenda">Agendamento</a>
+              <a href="#localizacao">Localização</a>
+            </nav>
+          </div>
         </header>
         {/* Fim header */}
 
@@ -331,18 +333,20 @@ export default function Home() {
 
         {/* Início seção footer */}
         <footer className={estilos.footer}>
-          <img src="banner2.png" alt="logo" />
-          <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#servico">Serviços</a>
-            <a href="#depoimento">Depoimentos</a>
-            <a href="#agenda">Agendamento</a>
-            <a href="#localizacao">Localização</a>
-          </nav>
-          <div className={estilos.icons}>
-            <IoLogoInstagram />
-            <FaFacebook />
-            <FiTwitter />
+          <div>
+            <img src="banner2.png" alt="logo" />
+            <nav>
+              <a href="#sobre">Sobre</a>
+              <a href="#servico">Serviços</a>
+              <a href="#depoimento">Depoimentos</a>
+              <a href="#agenda">Agendamento</a>
+              <a href="#localizacao">Localização</a>
+            </nav>
+            <div className={estilos.icons}>
+              <IoLogoInstagram className={estilos.sociais_icons} />
+              <FaFacebook className={estilos.sociais_icons} />
+              <FiTwitter className={estilos.sociais_icons} />
+            </div>
           </div>
           <div className={estilos.autor}>
             <p>&reg; 2025 - Desenvolvido por "Manoel Mecias do Nascimento"</p>

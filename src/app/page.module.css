@@ -14,37 +14,39 @@
 
 /* css header */
 .page>main>header {
+  position: fixed;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  padding: 20px;
+  padding: 10px 20px;
   width: 100%;
   border-bottom: 1px solid #e3bb42ff;
   text-align: center;
   gap: 5px;
+  z-index: 100;
 }
 
-.page>main>header>img {
+.page>main>header>div>img {
   width: 100px;
   height: 50px;
 }
 
-.page>main>header>nav {
+.page>main>header>div>nav {
   display: flex;
   flex-flow: column wrap;
   margin-top: 10px;
   gap: 5px;
 }
 
-.page>main>header>nav>a {
+.page>main>header>div>nav>a {
   text-decoration: none;
   margin-left: 10px;
   color: white;
 }
 
-.page>main>header>nav>a:hover {
+.page>main>header>div>nav>a:hover {
   color: #e3bb42ff;
 }
 
@@ -225,6 +227,10 @@ section.preco_servicos>div.servicos>div.img_texto {
   gap: 10px;
 }
 
+section.preco_servicos>div.servicos>div.img_texto>div.texto {
+  max-width: 250px;
+}
+
 section.preco_servicos>div.servicos>div.img_texto>div.img>img {
   width: 40px;
   height: 40px;
@@ -297,6 +303,10 @@ section.pacotes>div.servicos>div.img_texto {
   padding: 10px;
   align-items: center;
   gap: 10px;
+}
+
+section.pacotes>div.servicos>div.img_texto>div.texto {
+  max-width: 250px;
 }
 
 section.pacotes>div.servicos>div.img_texto>div.img>img {
@@ -412,6 +422,7 @@ section.espaco>div.imagens>img {
   width: 100%;
   height: 431px;
   object-fit: cover;
+  overflow: hidden;
 }
 
 ection.espaco>p {
@@ -510,6 +521,7 @@ section.aparencia_depoimento>div.depoimentos>p {
 section.aparencia_depoimento>div.falas {
   display: flex;
   overflow-x: auto;
+  flex-flow: row nowrap;
 }
 
 section.aparencia_depoimento>div.falas::-webkit-scrollbar {
@@ -560,6 +572,7 @@ section.agendamento {
   background-image: url("../../public/banner5.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-flow: column wrap;
   height: 200px;
@@ -568,11 +581,15 @@ section.agendamento {
 }
 
 section.agendamento>div {
+  display: flex;
+  flex-flow: column wrap;
   background-color: rgba(255, 255, 255, 0.505);
   width: 80%;
   margin: auto;
   padding: 20px;
   border-radius: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 section.agendamento>div>h1 {
@@ -600,7 +617,7 @@ div.contato>.icons {
   padding: 5px;
   width: 30px;
   height: 30px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 div.contato>small {
@@ -626,29 +643,45 @@ footer.footer {
   padding: 10px;
 }
 
-footer.footer>img {
+footer.footer>div>img {
   width: 100px;
   height: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-footer.footer>nav {
+footer.footer>div>nav {
   display: flex;
   flex-flow: column wrap;
   gap: 5px;
   align-items: center;
+  margin-bottom: 20px;
 }
 
-footer.footer>nav>a {
+footer.footer>div>nav>a {
   text-decoration: none;
   color: white;
 }
 
-footer.footer>nav>a:hover {
+footer.footer>div>nav>a:hover {
   color: #e3bb42ff;
 }
 
+footer.footer>div>div.icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+footer.footer>div>div.icons>.sociais_icons {
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
 footer.footer>div.autor {
+  justify-content: center;
+  text-align: center;
   color: white;
   font-size: .8em;
 }
@@ -677,7 +710,6 @@ footer.footer>div.autor {
 
 .whatsappIcon {
   color: white;
-  font-size: 1rem;
 }
 
 /* Fim do botão whatsapp */
@@ -689,15 +721,218 @@ footer.footer>div.autor {
   }
 
   .page>main>header {
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: row wrap;
     padding: 20px 100px;
   }
 
-  .page>main>header>nav {
+  .page>main>header>div {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page>main>header>div>nav {
     flex-flow: row wrap;
   }
 
+  section.end_contato {
+    max-width: 1024px;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+  }
+
+  section.qualificacao {
+    width: 100%;
+    max-width: 1024px;
+    margin: 30px auto 0px;
+    flex-flow: row nowrap;
+    gap: 5px;
+    flex: 1 1 auto;
+  }
+
+  section.qualificacao>article {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    justify-content: center;
+    margin: 0;
+    padding: 5px;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+  }
+
+  section.qualificacao>aside {
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
+  section.preco_servicos>div.servicos {
+    max-width: 1024px;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: center;
+    padding: 10px 20px
+  }
+
+  section.preco_servicos>div.servicos>div.img_texto {
+    flex: 0 1 calc(50% - 20px);
+  }
+
+  section.preco_servicos>div.servicos>div.img_texto>div.texto {
+    max-width: 250px;
+  }
+
+  section.pacotes>div.servicos {
+    max-width: 1024px;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: center;
+    padding: 10px 20px
+  }
+
+  section.pacotes>div.servicos>div.img_texto {
+    flex: 0 1 calc(50% - 20px);
+  }
+
+  section.pacotes>div.servicos>div.img_texto>div.texto {
+    max-width: 250px;
+  }
+
+  section.equipe>div.servicos {
+    width: 100%;
+    max-width: 1024px;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: center;
+    padding: 20px 30px
+  }
+
+  section.equipe>div.servicos>div.img_texto {
+    flex: 0 1 calc(50% - 20px);
+  }
+
+  section.equipe>div.servicos>div.img_texto>div.texto {
+    max-width: 350px;
+  }
+
+  section.espaco>div.imagens {
+    max-width: 1024px;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: center;
+  }
+
+  section.espaco>div.imagens>img {
+    flex: 1 1 calc(50% - 5px);
+    width: auto;
+    min-width: 358px;
+    height: auto;
+  }
+
+  section.espaco>div.servicos {
+    max-width: 1204px;
+    flex-flow: row nowrap;
+    margin: auto;
+    padding-top: 20px;
+  }
+
+  section.espaco>div.servicos>div.img_texto {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  section.espaco>div.servicos>div.img_texto>div.texto {
+    width: 100%;
+    max-width: calc(500px - 10px);
+    padding-left: 10px;
+  }
+
+  section.aparencia_depoimento>div.banner {
+    height: 400px;
+  }
+
+  section.aparencia_depoimento>div.banner h1,
+  section.aparencia_depoimento>div.banner button {
+    margin: 10px 0;
+  }
+
+  section.aparencia_depoimento>div.banner>h1 {
+    font-size: 2em;
+  }
+
+  section.aparencia_depoimento>div.banner>button {
+    font-size: 1.2em;
+  }
+
+  section.aparencia_depoimento>div.falas {
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  section.aparencia_depoimento>div.falas>div {
+    flex: 0 0 calc(25% - 10px);
+    max-width: 100%;
+  }
+
+  section.agendamento {
+    height: 400px;
+  }
+
+  section.agendamento > div {
+    max-width: 1024px;
+    height: 200px;
+  }
+
+  section.agendamento > div > h1 {
+    font-size: 2em;
+  }
+
+  section.agendamento > div > p {
+    font-size: 1.1rem;
+    max-width: 600px;
+  }
+
+  div.contato>.icons {
+    width: 40px;
+    height: 40px;
+  }
+
+  div.contato>small {
+    font-size: 1.1em;
+  }
+
+  section.localizacao {
+    height: 400px;
+  }
+  
+  footer.footer {
+    flex-flow: row wrap;
+    padding: 10px 10px;
+    justify-content: center;
+  }
+
+  footer.footer>div {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  footer.footer>div>nav {
+    flex-flow: row wrap;
+  }
+
+  .whatsappIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   section.end_contato {
     max-width: 1024px;
     margin: auto;
@@ -721,20 +956,24 @@ footer.footer>div.autor {
     flex: 1 1 auto;
   }
 
-  section.qualificacao>article {
-    display: flex;
-    flex-flow: column wrap;
-    width: 50%;
-    justify-content: center;
-    margin: 0;
-    padding: 5px;
-    flex-wrap: wrap;
+  section.espaco>div.imagens {
+    flex-flow: row nowrap;
+  }
+
+
+  section.espaco>div.imagens>img {
     flex: 1 1 auto;
+    width: 100%;
+    min-width: 200px;
+    height: auto;
   }
 
-  section.qualificacao>aside {
-    width: 50%;
-    flex-wrap: wrap;
+  section.aparencia_depoimento>div.banner {
+    height: 500px;
   }
 
+  .whatsappIcon {
+    width: 30px;
+    height: 30px;
+  }
 }
