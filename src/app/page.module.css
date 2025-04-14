@@ -46,9 +46,6 @@
   color: white;
 }
 
-.page>main>header>div>nav>a:hover {
-  color: #e3bb42ff;
-}
 
 /* Fim css header  */
 
@@ -81,13 +78,8 @@ section.banner>button {
   color: white;
   font-size: 1.1em;
   cursor: pointer;
+  border: 1px solid transparent;
 }
-
-section.banner>button:hover {
-  background-color: white;
-  color: #e3bb42ff;
-}
-
 /* Fim css banner */
 
 /* css contato */
@@ -271,11 +263,7 @@ section.pacotes>button {
   font-size: .8em;
   cursor: pointer;
   margin: auto;
-}
-
-section.pacotes>button:hover {
-  background-color: white;
-  color: #e3bb42ff;
+  border: 1px solid transparent;
 }
 
 section.pacotes>h2 {
@@ -349,11 +337,7 @@ section.equipe>button {
   font-size: .8em;
   cursor: pointer;
   margin: auto;
-}
-
-section.equipe>button:hover {
-  background-color: white;
-  color: #e3bb42ff;
+  border: 1px solid transparent;
 }
 
 section.equipe>h2 {
@@ -493,11 +477,7 @@ section.aparencia_depoimento>div.banner>button {
   font-size: .8em;
   cursor: pointer;
   margin: auto;
-}
-
-section.aparencia_depoimento>div.banner>button:hover {
-  background-color: white;
-  color: #e3bb42ff;
+  border: 1px solid transparent;
 }
 
 section.aparencia_depoimento>div.depoimentos {
@@ -655,9 +635,6 @@ footer.footer>div>nav>a {
   color: white;
 }
 
-footer.footer>div>nav>a:hover {
-  color: #e3bb42ff;
-}
 
 footer.footer>div>div.icons {
   display: flex;
@@ -730,11 +707,21 @@ footer.footer>div.autor {
   .page>main>header>div>nav {
     flex-flow: row wrap;
   }
+
+  .page>main>header>div>nav>a:hover {
+    color: #e3bb42ff;
+  }
   /* Fim do css header */
 
   /* Início do css banner */
   section.banner {
     position: relative;
+  }
+
+  section.banner>button:hover {
+    background-color: white;
+    color: #e3bb42ff;
+    border: 1px solid #e3bb42ff;
   }
   /* Fim do css banner */
 
@@ -782,6 +769,12 @@ footer.footer>div.autor {
     padding: 10px 20px
   }
 
+  section.pacotes>button:hover {
+    background-color: white;
+    color: #e3bb42ff;
+    border: 1px solid #e3bb42ff;
+  }
+
   section.preco_servicos>div.servicos>div.img_texto {
     flex: 0 1 calc(50% - 20px);
   }
@@ -825,6 +818,12 @@ footer.footer>div.autor {
 
   section.equipe>button {
     font-size: 1.1em;
+  }
+
+  section.equipe>button:hover {
+    background-color: white;
+    color: #e3bb42ff;
+    border: 1px solid #e3bb42ff;
   }
 
   section.equipe>div.servicos>div.img_texto {
@@ -877,6 +876,12 @@ footer.footer>div.autor {
   section.aparencia_depoimento>div.banner h1,
   section.aparencia_depoimento>div.banner button {
     margin: 10px 0;
+  }
+
+  section.aparencia_depoimento>div.banner>button:hover {
+    background-color: white;
+    color: #e3bb42ff;
+    border: 1px solid #e3bb42ff;
   }
 
   section.aparencia_depoimento>div.banner>h1 {
@@ -953,6 +958,10 @@ footer.footer>div.autor {
 
   footer.footer>div>nav {
     flex-flow: row wrap;
+  }
+
+  footer.footer>div>nav>a:hover {
+    color: #e3bb42ff;
   }
   /* Fim do css footer */
 
