@@ -577,6 +577,8 @@ section.agendamento>div>p {
   text-align: center;
   text-shadow: 2px 2px 2xp #e3bb42ff;
   margin-bottom: 10px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(227, 187, 66, 0.262);
 }
 
 section.agendamento>div>div.contato {
@@ -596,6 +598,8 @@ div.contato>.icons {
 
 div.contato>small {
   text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(227, 187, 66, 0.262);
 }
 
 /* Fim do css agendamento */
