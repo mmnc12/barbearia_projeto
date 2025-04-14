@@ -2,30 +2,30 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Times New Roman', Times, serif;
   font-size: 1em;
   background-color: #faf8f2;
+  overflow-x: hidden;
 }
 
 .page>main {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 /* css header */
 .page>main>header {
-  position: fixed;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  padding: 10px 20px;
+  padding: 20px;
   width: 100%;
   border-bottom: 1px solid #e3bb42ff;
   text-align: center;
   gap: 5px;
-  z-index: 100;
 }
 
 .page>main>header>div>img {
@@ -393,7 +393,6 @@ section.equipe>div.servicos>div.img_texto>div.texto>h3 {
 section.equipe>div.servicos>div.img_texto>div.texto>p {
   margin-bottom: 10px;
 }
-
 /* Fim do css equipe */
 
 /* Início do css espaço */
@@ -525,22 +524,17 @@ section.aparencia_depoimento>div.falas {
 }
 
 section.aparencia_depoimento>div.falas::-webkit-scrollbar {
-  width: 5px;
-  /* Largura da barra de rolagem */
-  height: 5px;
-  /* Altura da barra de rolagem */
+  width: 5px; /* Largura da barra de rolagem */
+  height: 5px; /* Altura da barra de rolagem */
 }
 
 section.aparencia_depoimento>div.falas::-webkit-scrollbar-thumb {
-  background-color: #e3bb42ff;
-  /* Cor da barra */
-  border-radius: 5px;
-  /* Bordas arredondadas */
+  background-color: #e3bb42ff; /* Cor da barra */
+  border-radius: 5px; /* Bordas arredondadas */
 }
 
 section.aparencia_depoimento>div.falas::-webkit-scrollbar-track {
-  background-color: lightgray;
-  /* Cor do fundo da barra */
+  background-color: lightgray; /* Cor do fundo da barra */
 }
 
 section.aparencia_depoimento>div.falas>div {
@@ -631,7 +625,6 @@ section.localizacao {
   height: 200px;
   overflow: hidden;
 }
-
 /* Fim css localização */
 
 /* Início css footer */
@@ -711,21 +704,21 @@ footer.footer>div.autor {
 .whatsappIcon {
   color: white;
 }
-
 /* Fim do botão whatsapp */
 
-
+/* INÍCIO DA RESPONSIVIDADE 768PX TABLET */
 @media screen and (min-width: 768px) {
-  section.banner {
-    position: relative;
-  }
-
+  /* Início da css header */
   .page>main>header {
     justify-content: center;
     flex-flow: row wrap;
     padding: 20px 100px;
-  }
 
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+  
   .page>main>header>div {
     width: 100%;
     max-width: 1024px;
@@ -733,17 +726,27 @@ footer.footer>div.autor {
     align-items: center;
     justify-content: space-between;
   }
-
+  
   .page>main>header>div>nav {
     flex-flow: row wrap;
   }
+  /* Fim do css header */
 
+  /* Início do css banner */
+  section.banner {
+    position: relative;
+  }
+  /* Fim do css banner */
+
+  /* Inicio css contato */
   section.end_contato {
     max-width: 1024px;
     flex-flow: row nowrap;
     align-items: flex-start;
   }
+  /* Fim do css contato */
 
+  /* Início do css qualificação */
   section.qualificacao {
     width: 100%;
     max-width: 1024px;
@@ -768,7 +771,9 @@ footer.footer>div.autor {
     width: 50%;
     flex-wrap: wrap;
   }
+  /* Fim do css qualificação */
 
+  /* Início do css serviços */
   section.preco_servicos>div.servicos {
     max-width: 1024px;
     flex-flow: row wrap;
@@ -784,13 +789,19 @@ footer.footer>div.autor {
   section.preco_servicos>div.servicos>div.img_texto>div.texto {
     max-width: 250px;
   }
+  /* Fim do css serviços */
 
+  /* Início do css pacote */
   section.pacotes>div.servicos {
     max-width: 1024px;
     flex-flow: row wrap;
     margin: auto;
     justify-content: center;
     padding: 10px 20px
+  }
+
+  section.pacotes>button {
+    font-size: 1.1em;
   }
 
   section.pacotes>div.servicos>div.img_texto {
@@ -800,7 +811,9 @@ footer.footer>div.autor {
   section.pacotes>div.servicos>div.img_texto>div.texto {
     max-width: 250px;
   }
+  /* Fim do css pacote */
 
+  /* Início do css equipe */
   section.equipe>div.servicos {
     width: 100%;
     max-width: 1024px;
@@ -810,6 +823,10 @@ footer.footer>div.autor {
     padding: 20px 30px
   }
 
+  section.equipe>button {
+    font-size: 1.1em;
+  }
+
   section.equipe>div.servicos>div.img_texto {
     flex: 0 1 calc(50% - 20px);
   }
@@ -817,7 +834,9 @@ footer.footer>div.autor {
   section.equipe>div.servicos>div.img_texto>div.texto {
     max-width: 350px;
   }
+  /* Fim do css equipe */
 
+  /* Início do css espaço */
   section.espaco>div.imagens {
     max-width: 1024px;
     flex-flow: row wrap;
@@ -848,7 +867,9 @@ footer.footer>div.autor {
     max-width: calc(500px - 10px);
     padding-left: 10px;
   }
+  /* Fim do css espaço */
 
+  /* Início do css depoimento */
   section.aparencia_depoimento>div.banner {
     height: 400px;
   }
@@ -875,7 +896,9 @@ footer.footer>div.autor {
     flex: 0 0 calc(25% - 10px);
     max-width: 100%;
   }
+  /* Fim do css depoimento */
 
+  /* Início do css agendamento */
   section.agendamento {
     height: 400px;
   }
@@ -893,7 +916,9 @@ footer.footer>div.autor {
     font-size: 1.1rem;
     max-width: 600px;
   }
+  /* Fim do css agendamento */
 
+  /* Inicio do css contato */
   div.contato>.icons {
     width: 40px;
     height: 40px;
@@ -902,11 +927,15 @@ footer.footer>div.autor {
   div.contato>small {
     font-size: 1.1em;
   }
+  /* Fim do css contato */
 
+  /* Início do css localização */
   section.localizacao {
     height: 400px;
   }
+  /* Fim do css localização */
   
+  /* Início do css footer */
   footer.footer {
     flex-flow: row wrap;
     padding: 10px 10px;
@@ -925,14 +954,20 @@ footer.footer>div.autor {
   footer.footer>div>nav {
     flex-flow: row wrap;
   }
+  /* Fim do css footer */
 
+  /* Início do css whatsapp */
   .whatsappIcon {
     width: 20px;
     height: 20px;
   }
+  /* Fim do css whatsapp */
 }
+/* FIM DA RESPONSIVIDADE 768PX TABLET */
 
+/* INÍCIO DA RESPONSIVIDADE 992PX DESKTOP E TV */
 @media screen and (min-width: 992px) {
+  /* Inicio do css contato */
   section.end_contato {
     max-width: 1024px;
     margin: auto;
@@ -946,7 +981,9 @@ footer.footer>div.autor {
 
     transform: translate(-50%, 40%);
   }
+  /* Fim do css contato */
 
+  /* Início da css qualificação */
   section.qualificacao {
     width: 100%;
     max-width: 1024px;
@@ -955,11 +992,12 @@ footer.footer>div.autor {
     gap: 5px;
     flex: 1 1 auto;
   }
+  /* Fim do css qualificação */
 
+  /* Início do css espaço */
   section.espaco>div.imagens {
     flex-flow: row nowrap;
   }
-
 
   section.espaco>div.imagens>img {
     flex: 1 1 auto;
@@ -971,9 +1009,12 @@ footer.footer>div.autor {
   section.aparencia_depoimento>div.banner {
     height: 500px;
   }
+  /* Fim do css espaço */
 
+  /* Início do css botão whatsapp */
   .whatsappIcon {
     width: 30px;
     height: 30px;
   }
+  /* Fim do css botão whatsapp */
 }
