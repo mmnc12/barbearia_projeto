@@ -45,8 +45,6 @@
   margin-left: 10px;
   color: white;
 }
-
-
 /* Fim css header  */
 
 /* css banner */
@@ -181,7 +179,6 @@ section.qualificacao>aside>img {
   height: 100%;
   object-fit: cover;
 }
-
 /* Fim css qualificação */
 
 /*Início css serviços */
@@ -191,7 +188,6 @@ section.preco_servicos {
   width: 100vw;
   padding: 20px;
 }
-
 
 section.preco_servicos>h2 {
   text-align: center;
@@ -317,7 +313,6 @@ section.pacotes>div.servicos>div.img_texto>div.texto>p.preco {
   font-weight: bold;
   color: #e3bb42ff;
 }
-
 /* Fim do css pacotes */
 
 /* Iníco do css equipes */
@@ -408,7 +403,7 @@ section.espaco>div.imagens>img {
   overflow: hidden;
 }
 
-ection.espaco>p {
+section.espaco>p {
   text-align: center;
   padding: 10px;
 }
@@ -439,7 +434,6 @@ section.espaco>div.servicos>div.img_texto>div.texto>h3 {
 section.espaco>div.servicos>div.img_texto>div.texto>p {
   margin-bottom: 10px;
 }
-
 /* Fim do css espaço */
 
 /* Início do css depoimento */
@@ -538,7 +532,6 @@ section.aparencia_depoimento>div.falas>div>img {
 section.aparencia_depoimento>div.falas>div>div.icons {
   color: yellow;
 }
-
 /* Fim do css depoimento */
 
 /* Início css agendamento */
@@ -584,6 +577,8 @@ section.agendamento>div>p {
 section.agendamento>div>div.contato {
   display: flex;
   justify-content: center;
+  align-items: center;display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -601,7 +596,6 @@ div.contato>small {
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(227, 187, 66, 0.262);
 }
-
 /* Fim do css agendamento */
 
 /* Início css localização */
@@ -659,7 +653,6 @@ footer.footer>div.autor {
   color: white;
   font-size: .8em;
 }
-
 /* Fim css footer */
 
 /* Início css botão whatsapp */
@@ -773,21 +766,16 @@ footer.footer>div.autor {
     padding: 10px 20px
   }
 
-  section.pacotes>button:hover {
-    background-color: white;
-    color: #e3bb42ff;
-    border: 1px solid #e3bb42ff;
-  }
-
+  
   section.preco_servicos>div.servicos>div.img_texto {
     flex: 0 1 calc(50% - 20px);
   }
-
+  
   section.preco_servicos>div.servicos>div.img_texto>div.texto {
     max-width: 250px;
   }
   /* Fim do css serviços */
-
+  
   /* Início do css pacote */
   section.pacotes>div.servicos {
     max-width: 1024px;
@@ -796,9 +784,15 @@ footer.footer>div.autor {
     justify-content: center;
     padding: 10px 20px
   }
-
+  
   section.pacotes>button {
     font-size: 1.1em;
+  }
+  
+  section.pacotes>button:hover {
+    background-color: white;
+    color: #e3bb42ff;
+    border: 1px solid #e3bb42ff;
   }
 
   section.pacotes>div.servicos>div.img_texto {
@@ -1018,11 +1012,14 @@ footer.footer>div.autor {
     min-width: 200px;
     height: auto;
   }
-
+  
   section.aparencia_depoimento>div.banner {
     height: 500px;
   }
   /* Fim do css espaço */
+  
+  
+  /* Fim do css banner */
 
   /* Início do css botão whatsapp */
   .whatsappIcon {
